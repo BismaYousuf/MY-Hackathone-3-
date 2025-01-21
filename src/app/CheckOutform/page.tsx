@@ -1,24 +1,12 @@
-"use client";
+"use client"
 
-import { useState } from 'react';
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Label } from "@/components/ui/label"
+import { Checkbox } from "@/components/ui/checkbox"
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  imageUrl: string;
-  quantity: number;
-}
-
-interface CheckoutFormProps {
-  products?: Product[]; // Make products optional
-}
-
-const CheckoutForm: React.FC<CheckoutFormProps> = ({ products = [] }) => {
-  const [sameAsShipping, setSameAsShipping] = useState(false);
+const CheckoutForm: React.FC = () => {
+  const [sameAsShipping, setSameAsShipping] = useState(false)
 
   return (
     <div>
@@ -35,12 +23,11 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ products = [] }) => {
         <Button variant="outline" className="flex items-center gap-2">
           Back to cart
         </Button>
-        <Button className="bg-[#FF9F0D] hover:bg-[#FF9F0D]/90 flex items-center gap-2">
-          Proceed to shipping
-        </Button>
+        <Button className="bg-[#FF9F0D] hover:bg-[#FF9F0D]/90 flex items-center gap-2">Proceed to shipping</Button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CheckoutForm;
+export default CheckoutForm
+
