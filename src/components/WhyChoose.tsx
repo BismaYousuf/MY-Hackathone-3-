@@ -1,4 +1,4 @@
-import { client } from '@/sanity/lib/client';
+
 import { SandwichIcon as Hamburger, Cookie, Wine } from 'lucide-react'
 import Image from 'next/image'
 
