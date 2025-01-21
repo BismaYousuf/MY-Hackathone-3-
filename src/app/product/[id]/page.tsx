@@ -72,28 +72,36 @@ async function fetchProductById(id: string): Promise<Product> {
 // }
 
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { id: string };
+}): Promise<Metadata> {
   try {
-    const product = await fetchProductById(params.id)
+    const product = await fetchProductById(params.id);
     return {
       title: `${product.name} | Our Store`,
       description: product.description,
-    }
+    };
   } catch {
     return {
       title: "Product Not Found",
       description: "The requested product could not be found.",
-    }
+    };
   }
 }
 
-export default async function ProductPage({ params }: { params: { id: string } }) {
-  let product: Product
+export default async function ProductPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  let product: Product;
 
   try {
-    product = await fetchProductById(params.id)
+    product = await fetchProductById(params.id);
   } catch {
-    notFound()
+    notFound();
   }
 
   return (
@@ -117,5 +125,5 @@ export default async function ProductPage({ params }: { params: { id: string } }
         </div>
       </div>
     </div>
-  )
+  );
 }
