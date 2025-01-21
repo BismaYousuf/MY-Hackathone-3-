@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import { useParams } from "next/navigation"
 import { createClient } from "@sanity/client"
 import Image from "next/image"
-import { Star, Heart, GitCompareIcon as GitDiff, ShoppingBag, Minus, Plus, ChevronRight } from "lucide-react"
+import { Star, Heart, GitCompareIcon as GitDiff, Minus, Plus, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { FaFacebookF, FaInstagram, FaTwitter, FaVk } from "react-icons/fa"
@@ -31,6 +31,14 @@ interface Product {
   description?: string
   reviews: Array<{ rating: number; comment: string }>
 }
+interface ProductItem {
+  id: string;
+  name: string;
+  price: number;
+  image: string;
+  quantity?: number; // Optional for wishlist and compare
+}
+
 
 export default function ProductDetails() {
   const { id } = useParams<{ id: string }>()
@@ -85,7 +93,7 @@ export default function ProductDetails() {
     }
 
     const existingCart = JSON.parse(localStorage.getItem("cart") || "[]")
-    const existingItemIndex = existingCart.findIndex((item: any) => item.id === cartItem.id)
+    const existingItemIndex = existingCart.findIndex((item: ProductItem) => item.id === cartItem.id)
 
     if (existingItemIndex > -1) {
       existingCart[existingItemIndex].quantity += quantity
@@ -108,7 +116,7 @@ export default function ProductDetails() {
     }
 
     const existingWishlist = JSON.parse(localStorage.getItem("wishlist") || "[]")
-    if (!existingWishlist.some((item: any) => item.id === wishlistItem.id)) {
+    if (!existingWishlist.some((item: ProductItem) => item.id === wishlistItem.id)) {
       existingWishlist.push(wishlistItem)
       localStorage.setItem("wishlist", JSON.stringify(existingWishlist))
       alert("Product added to wishlist!")
@@ -127,7 +135,7 @@ export default function ProductDetails() {
     }
 
     const existingCompare = JSON.parse(localStorage.getItem("compare") || "[]")
-    if (!existingCompare.some((item: any) => item.id === compareItem.id)) {
+    if (!existingCompare.some((item: ProductItem) => item.id === compareItem.id)) {
       existingCompare.push(compareItem)
       localStorage.setItem("compare", JSON.stringify(existingCompare))
       alert("Product added to compare list!")

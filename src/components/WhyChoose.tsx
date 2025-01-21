@@ -3,9 +3,9 @@ import { SandwichIcon as Hamburger, Cookie, Wine } from 'lucide-react'
 import Image from 'next/image'
 
 export default async function WhyChooseUs() {
-  const res = await client.fetch(
-  "*[_type == 'landingpage'][0].section[1]{'orangefoodHeading': orangefoodHeading, 'foodHeading': foodHeading, 'foodsubhead': foodsubhead, 'foodcategorycards': foodcategorycards[]{'foodcardimg': foodcardimg.asset->url, 'fooddis': fooddis, 'foodtitle': foodtitle}}"
- );
+//   const res = await client.fetch(
+//   "*[_type == 'landingpage'][0].section[1]{'orangefoodHeading': orangefoodHeading, 'foodHeading': foodHeading, 'foodsubhead': foodsubhead, 'foodcategorycards': foodcategorycards[]{'foodcardimg': foodcardimg.asset->url, 'fooddis': fooddis, 'foodtitle': foodtitle}}"
+//  );
    
  
   return (

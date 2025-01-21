@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
-import { client } from '@/sanity/lib/client'
 
 export async function HeroSection() {
  

@@ -32,8 +32,19 @@ const products = [
 
 interface ProductDetailProps {
   id: string
-  addToCart: (product: any) => void
+  addToCart: (product: Product) => void
 }
+
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  oldPrice: number;
+  image: string;
+  rating?: number; 
+  quantity?: number; 
+}
+
 
 export default function ProductDetail({ id, addToCart }: ProductDetailProps) {
   const [quantity, setQuantity] = useState(1)
@@ -63,7 +74,8 @@ export default function ProductDetail({ id, addToCart }: ProductDetailProps) {
       price: product.price,
       rating: 5, // Assuming a default rating
       image: product.image,
-      quantity: quantity
+      quantity: quantity,
+      oldPrice: 0
     })
   }
 
@@ -232,7 +244,7 @@ export default function ProductDetail({ id, addToCart }: ProductDetailProps) {
           </div>
         </div>
       </div>
-      <ProductDescription />
+      <ProductDescription productId={""} />
       <SimilarProducts />
     </>
   )

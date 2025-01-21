@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
 export default function CheckOut() {
-  const router = useRouter()
+  // const router = useRouter()
 
   return (
     <div className="w-full max-w-7xl mx-auto p-4 mt-[120px] mb-[120px]">

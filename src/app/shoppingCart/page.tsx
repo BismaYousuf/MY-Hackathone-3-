@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Star, Plus, Minus, Trash2 } from 'lucide-react'
+import {  Plus, Minus, Trash2 } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
