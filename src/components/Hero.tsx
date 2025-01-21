@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
+import Link from 'next/link'
 
 export async function HeroSection() {
  
@@ -38,9 +39,11 @@ export async function HeroSection() {
                 <p className="mb-8 text-gray-300 max-w-md">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue
                 </p>
-                <Button className="bg-[#FF9F0D] text-white px-8 py-3 rounded-full hover:bg-[#FF9F0D]/90 transition-colors">
+              <Link href={'/shop'}>
+              <Button className="bg-[#FF9F0D] text-white px-8 py-3 rounded-full hover:bg-[#FF9F0D]/90 transition-colors">
                   See Menu
                 </Button>
+              </Link>
               </div>
 
               {/* Social icons */}
