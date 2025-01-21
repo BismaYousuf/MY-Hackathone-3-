@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Clock, MessageCircle, PinIcon as Pinterest } from 'lucide-react'
@@ -24,6 +25,8 @@ const recentPosts = [
 ]
 
 export default function Footer() {
+
+
   return (
     <footer className="bg-[#1A1A1A] text-white pt-16">
       {/* Newsletter Section */}
