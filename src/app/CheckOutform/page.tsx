@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { useState } from 'react'
 import { ChevronRight } from 'lucide-react'
@@ -28,7 +28,7 @@ interface CheckoutFormProps {
   products: Product[]; // Ensure this prop is passed correctly
 }
 
-export default function CheckoutForm({ products = [] }: CheckoutFormProps) {  // Default to empty array if products is undefined
+const CheckoutForm: React.FC<CheckoutFormProps> = ({ products = [] }) => {  // Default to empty array if products is undefined
   const [sameAsShipping, setSameAsShipping] = useState(false);
 
   // Calculate total, ensuring products is an array
@@ -63,7 +63,6 @@ export default function CheckoutForm({ products = [] }: CheckoutFormProps) {  //
           {/* Shipping Address Form */}
           <div className="lg:col-span-2">
             {/* Shipping Address Form Fields (same as before) */}
-            {/* ... */}
 
             <div className="mt-6 flex items-center space-x-2">
               <Checkbox
@@ -149,3 +148,5 @@ export default function CheckoutForm({ products = [] }: CheckoutFormProps) {  //
     </>
   );
 }
+
+export default CheckoutForm;
