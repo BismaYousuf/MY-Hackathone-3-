@@ -13,15 +13,11 @@ import Link from "next/link"
 import { createClient } from "@sanity/client"
 
 interface Product {
-  _id: string
-  name: string
-  price: number
-  image: {
-    asset: {
-      _ref: string
-    }
-  }
-  category: string
+  _id: string;
+  name: string;
+  price: number;
+  image: string; // Now a string URL
+  category: string;
 }
 
 const client = createClient({
