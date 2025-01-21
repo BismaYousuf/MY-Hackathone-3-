@@ -10,11 +10,11 @@ interface Product {
   imageUrl: string
 }
 
-interface ProductPageProps {
-  params: {
-    id: string
-  }
-}
+// interface ProductPageProps {
+//   params: {
+//     id: string
+//   }
+// }
 
 async function fetchProductById(id: string): Promise<Product> {
   // This is a mock fetch function. Replace with actual API call in production.
