@@ -72,7 +72,7 @@ async function fetchProductById(id: string): Promise<Product> {
 // }
 
 
-export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
   try {
     const product = await fetchProductById(params.id)
     return {
@@ -87,7 +87,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   }
 }
 
-export default async function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage({ params }: { params: { id: string } }) {
   let product: Product
 
   try {
