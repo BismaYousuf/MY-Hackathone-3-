@@ -28,7 +28,7 @@ const navigationItems: NavigationItem[] = [
     title: "Pages",
     href: "#",
     children: [
-      { title: "About Us", href: "/about" },
+      { title: "About Us", href: "/aboutSection" },
       { title: "Team", href: "/not-found" },
       { title: "FAQ", href: "/faq" },
     ],
@@ -152,6 +152,8 @@ export function Navbar() {
                 />
                 <Search className="absolute right-3 top-1/2 h-5 w-5 -translate-y-1/2 text-white" />
               </div>
+              <Link href="/shoppingCart">
+              
               <Button
                 variant="ghost"
                 size="icon"
@@ -159,6 +161,7 @@ export function Navbar() {
               >
                 <ShoppingBag className="h-6 w-6" />
               </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -207,13 +210,16 @@ export function Navbar() {
                   value={searchQuery}
                   onChange={handleSearch}
                 />
-                <Button
+               <Link href={"/shoppingCart"} >
+               <Button
                   variant="ghost"
                   size="icon"
                   className="text-white hover:bg-orange-600"
                 >
                   <ShoppingBag className="h-6 w-6" />
                 </Button>
+               </Link>
+                
               </div>
             </div>
           </div>

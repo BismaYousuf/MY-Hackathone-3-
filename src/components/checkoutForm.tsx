@@ -163,10 +163,12 @@ export default function CheckoutForm() {
                   Back to cart
                 </Button>
               </Link>
+              <Link href={"/shipment"}>
               <Button onClick={handlePlaceOrder} className="bg-[#FF9F0D] hover:bg-[#FF9F0D]/90 flex items-center gap-2">
-                Place Order
+                Proceed to Shipping
                 <ArrowRight className="h-4 w-4" />
               </Button>
+              </Link>
             </div>
           </div>
 

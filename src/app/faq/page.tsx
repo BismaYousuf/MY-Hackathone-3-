@@ -9,27 +9,27 @@ import Link from 'next/link'
 const faqs = [
   {
     question: "How we serve food?",
-    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis modi ullam amet debitis libero veritatis enim repellat optio natus eum delectus deserunt, odit expedita eos molestiae ipsa totam quidem?"
+    answer: "Use clean and stylish plates, bowls, or food packaging. Arrange food attractively, balancing colors, textures, and portions Garnish dishes with fresh herbs, sauces, or edible flowers for an elegant touch"
   },
   {
     question: "How can we get in touch with you?",
-    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis modi ullam amet debitis libero veritatis enim repellat optio natus eum delectus deserunt, odit expedita eos molestiae ipsa totam quidem?"
+    answer: "We are here to help with any questions, concerns, or feedback you may have! Whether you are looking for product information, need assistance with an order, or want to collaborate, feel free to reach out. Email: support@foodtuck.com, Phone: +92 343 390000"
   },
   {
     question: "How is our food quality?",
-    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis modi ullam amet debitis libero veritatis enim repellat optio natus eum delectus deserunt, odit expedita eos molestiae ipsa totam quidem?"
+    answer: "At FoodTuck, we pride ourselves on delivering food that stands out in taste, freshness, and presentation."
   },
   {
     question: "What will be delivered? And When?",
-    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis modi ullam amet debitis libero veritatis enim repellat optio natus eum delectus deserunt, odit expedita eos molestiae ipsa totam quidem?"
+    answer: "We understand the importance of timely delivery. Here's our delivery timeline. Local Deliveries: Orders typically arrive within 24-48 hours.Special Orders/Custom Products: Delivered within 3-5 business days, depending on the customization.Delivery Zones: We deliver to all zones within our coverage area. Use our delivery zone checker at checkout for specific timelines."
   },
   {
     question: "How do we give home delivery?",
-    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis modi ullam amet debitis libero veritatis enim repellat optio natus eum delectus deserunt, odit expedita eos molestiae ipsa totam quidem?"
+    answer: "Enjoy fresh, high-quality food and restaurant supplies delivered straight to your doorstep! At FoodTuck,"
   },
   {
     question: "Is this restaurant 24 hours open?",
-    answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis modi ullam amet debitis libero veritatis enim repellat optio natus eum delectus deserunt, odit expedita eos molestiae ipsa totam quidem?"
+    answer: "At FoodTuck, we strive to meet your needs with convenient operating hours. While we’re not open 24 hours, we ensure our services are available during prime times:"
   }
 ]
 
@@ -73,7 +73,7 @@ export default function FAQ() {
           Questions Looks Here
         </h2>
         <p className="text-[#4F4F4F] max-w-3xl mx-auto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        FoodTuck is an online platform offering high-quality food and restaurant supplies, tailored for chefs, restaurants, and home-based food entrepreneurs.
         </p>
       </div>
 
