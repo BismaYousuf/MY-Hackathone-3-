@@ -29,7 +29,7 @@ export default function RestaurantProcess() {
 
         {/* Description */}
         <p className="text-white/90 max-w-xl sm:max-w-2xl mb-8 text-center lg:text-right">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna.
+        We meticulously document every step of our food preparation process, from sourcing the finest ingredients to the final dish served on your table. Each food item is carefully tracked and maintained to ensure the highest quality, freshness, and consistency in every meal. We take pride in the attention to detail, ensuring every ingredient is handled with care until its perfectly served and saved for your enjoyment.
         </p>
 
         {/* CTA Buttons */}

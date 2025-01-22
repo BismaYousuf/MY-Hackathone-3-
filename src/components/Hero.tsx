@@ -37,7 +37,7 @@ export async function HeroSection() {
                   food Quality
                 </h1>
                 <p className="mb-8 text-gray-300 max-w-md">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue
+                At FoodTuck, we master the art of delivering delicious meals fast without compromising on quality. Enjoy fresh, flavorful dishes prepared with care, served in record time. Speed, taste, and excellence—every bite is a masterpiece!
                 </p>
               <Link href={'/shop'}>
               <Button className="bg-[#FF9F0D] text-white px-8 py-3 rounded-full hover:bg-[#FF9F0D]/90 transition-colors">

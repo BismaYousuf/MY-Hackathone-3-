@@ -89,19 +89,19 @@ export default function CheckoutForm() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <Label htmlFor="firstName">First name</Label>
-                <Input id="firstName" placeholder="Enter first name" />
+                <Input id="firstName" placeholder="Enter first name" required/>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="lastName">Last name</Label>
-                <Input id="lastName" placeholder="Enter last name" />
+                <Input id="lastName" placeholder="Enter last name" required/>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email">Email address</Label>
-                <Input id="email" type="email" placeholder="Enter email address" />
+                <Input id="email" type="email" placeholder="Enter email address" required />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="phone">Phone number</Label>
-                <Input id="phone" type="tel" placeholder="Enter phone number" />
+                <Input id="phone" type="tel" placeholder="Enter phone number" required />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="company">Company</Label>
@@ -114,7 +114,7 @@ export default function CheckoutForm() {
                     <SelectValue placeholder="Choose country" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="us">United States</SelectItem>
+                    <SelectItem value="us">Pakistan</SelectItem>
                     <SelectItem value="uk">United Kingdom</SelectItem>
                     <SelectItem value="ca">Canada</SelectItem>
                   </SelectContent>
@@ -127,9 +127,9 @@ export default function CheckoutForm() {
                     <SelectValue placeholder="Choose city" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="ny">New York</SelectItem>
-                    <SelectItem value="la">Los Angeles</SelectItem>
-                    <SelectItem value="ch">Chicago</SelectItem>
+                    <SelectItem value="ny">Karachi</SelectItem>
+                    <SelectItem value="la">Islamabad</SelectItem>
+                    <SelectItem value="ch">Pindi</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -139,7 +139,7 @@ export default function CheckoutForm() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="address1">Address 1</Label>
-                <Input id="address1" placeholder="Enter address line 1" />
+                <Input id="address1" placeholder="Enter address line 1" required />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="address2">Address 2</Label>

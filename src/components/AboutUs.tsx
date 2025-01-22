@@ -16,15 +16,13 @@ export default function AboutUs() {
               We Create the best foody product
             </h2>
             <p className="text-white text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat
-              fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed
-              vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
+            We create exceptional food with the finest ingredients and unmatched flavor. Passionate about quality, we serve every dish with care, ensuring every bite is a delight. Enjoy the best in fast, flavorful dining!
             </p>
             <ul className="space-y-4">
               {[
-                "Lacus nisi, et ac dapibus sit eu velit in consequat.",
-                "Quisque diam pellentesque bibendum non dui volutpat fringilla",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "Quality Ingredients: We use only the finest ingredients to craft every dish",
+                "Passion for Flavor: Each meal is made with care, delivering exceptional taste in every bite.",
+                "Fast and Fresh: Enjoy gourmet food quickly, without compromising on quality.",
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <span className="mt-1">

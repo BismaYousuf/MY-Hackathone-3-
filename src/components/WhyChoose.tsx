@@ -77,9 +77,7 @@ export default async function WhyChooseUs() {
                 Extra ordinary taste And Experienced
               </h2>
               <p className="text-white text-sm sm:text-base leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat
-                fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed
-                vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
+              We stand out for our extraordinary taste and exceptional quality. With years of experience, our skilled team ensures every dish is crafted to perfection, delivering flavors that leave a lasting impression. We are committed to using the finest ingredients and serving meals that are fresh, fast, and always delicious, making your dining experience truly unforgettable.
               </p>
             </div>
 
